@@ -127,6 +127,7 @@ body {
   background-color: rgb(239, 236, 231);
   border-top: 1px solid rgb(206, 206, 204);
   border-bottom: 1px solid rgb(206, 206, 204);
+  margin-bottom: 36px;
 }
 
 .main-mob-pic {
@@ -273,6 +274,47 @@ body {
   background-color: white;
   margin-bottom: 20px;
 }
+
+.other-offers-bg .one-third {
+  margin-right: -3px; /* to offset the inline-block 'pixel-growth' issue. */
+}
+
+.other-offer-pic {
+  margin-bottom: 6px;
+}
+
+.other-offer-caption {
+  width: 196px;
+  font-size: 14px;
+}
+
+.other-offer-subcaption {
+  width:196px;
+  font-size: 12px;
+}
+
+.clock-icon {
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+}
+
+.remaining-time {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.large-line {
+  height: 1px;
+  background-color: rgb(147, 147, 146);
+  margin-top: 20px;
+
+
+
+
+
+
+
 
 
 
