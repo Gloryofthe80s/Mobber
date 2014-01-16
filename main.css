@@ -308,6 +308,31 @@ body {
   height: 1px;
   background-color: rgb(147, 147, 146);
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*
+  UPCOMING MOBS STYLES
+*/
+
+.upcoming-mobs-title {
+  font-size: 24px;
+}
+
+.upcoming-mobs-table-title {
+  display: inline-block;
+  margin-right: ;
+}
+
+.table-mobbers-needed {
+  display: inline-block;
+  margin-right: ;
+}
+
+.table-date {
+  display: inline-block;
+}
+
 
 
 
