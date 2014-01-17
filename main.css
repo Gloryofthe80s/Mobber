@@ -131,8 +131,9 @@ body {
 
 .main-mob-pic-container {
   position: relative;
-  width: 620px;
-  height:400px;
+  width: 618px;
+  height: 398px;
+  border: 1px solid rgb(218, 218, 218);
   background-image: url(http://lorempixel.com/620/400/nightlife/);
 }
 
@@ -162,7 +163,7 @@ body {
 .caption {
   width: 570px;
   padding: 24px 24px 12px 24px;
-  border: 1px solid rgb(215, 215, 214);
+  border: 1px solid rgb(218, 218, 218);
   background-color: rgb(208, 205, 199);
   margin-bottom: 6px;
 }
@@ -179,13 +180,74 @@ body {
   color: rgb(137, 136, 135);
 }
 
-.current-mobbers {
-  margin-bottom: 28px;
-  margin-right: 36px;
+.current-mobbers-container {
+  display: inline-block;
 }
 
-.mobbers-needed {
-  margin-bottom: 28px;
+.current-mobbers-top {
+  width: 140px;
+  height: 116px;
+  background-color: rgb(208, 205, 199);
+  box-shadow: 0 0 3px 1px white;
+}
+
+.current-mobbers-bottom {
+  width: 138px;
+  height: 34px;
+  background-color: rgb(181, 174, 162);
+  border-right: 1px solid rgb(154, 154, 154);
+  border-bottom: 1px solid rgb(154, 154, 154);
+  border-left: 1px solid rgb(154, 154, 154);
+}
+
+.mobbers-needed-container {
+  display: inline-block;
+  margin-left: 36px;
+  margin-bottom: 26px;
+}
+
+.mobbers-needed-top {
+  width: 140px;
+  height: 116px; /*subtracted 36 for the bottom half*/
+  background-color: rgb(208, 205, 199);
+  box-shadow: 0 0 3px 1px white;
+}
+
+.mobbers-needed-bottom {
+  width: 138px;
+  height: 34px;
+  background-color: rgb(181, 174, 162);
+  border-right: 1px solid rgb(154, 154, 154);
+  border-bottom: 1px solid rgb(154, 154, 154);
+  border-left: 1px solid rgb(154, 154, 154);
+}
+
+.current-mobbers-top span, .mobbers-needed-top span {
+  display: inline-block;
+  font-size: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  text-shadow: gray 1px 1px 2px;
+}
+
+.current-mobbers-bottom span {
+  display: inline-block;
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 34px;
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  text-shadow: gray 0px 1px 2px;
+}
+
+.mobbers-needed-bottom span {
+ display: inline-block;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  text-shadow: gray 0px 1px 2px;
 }
 
 .join-mob-button {
@@ -218,7 +280,7 @@ body {
   border-radius: 6px;
   height: 86px;
   background-color: white;
-  box-shadow: inset 
+  box-shadow: inset 1px -4px 10px -6px gray;
 }
 
 .medal-icon {
@@ -306,6 +368,7 @@ body {
 
 .other-offer-pic {
   margin-bottom: 6px;
+  box-shadow: 0 0 1px gray;
 }
 
 .other-offer-caption {
