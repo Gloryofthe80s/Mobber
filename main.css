@@ -25,19 +25,18 @@ body {
   position: relative;
   display: inline-block;
   width: 640px;
-  margin-right: -4px;
 }
 
 .one-third {
   position: relative;
   display: inline-block;
   width: 320px;
+  margin-right: -4px;
 }
 
 .1px-line {
   height: 1px;
   background-color: rgb(147, 147, 146);
-
 }
 
 /*
@@ -130,8 +129,34 @@ body {
   margin-bottom: 36px;
 }
 
-.main-mob-pic {
+.main-mob-pic-container {
+  position: relative;
+  width: 620px;
+  height:400px;
+  background-image: url(http://lorempixel.com/620/400/nightlife/);
+}
 
+.main-pic-highlight {
+  height: 22px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 18px;
+}
+
+.main-pic-highlight span {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  right: 0;
+}
+
+.main-pic-highlight-expiration {
+  position: absolute;
+  right: 18px;
+  top: 22px;
+  color: rgb(255, 255, 255);
+}
+
+.main-pic-highlight-expiration .remaining-time {
+  font-size: 14px;
 }
 
 .caption {
@@ -291,6 +316,29 @@ body {
 .other-offer-subcaption {
   width:196px;
   font-size: 12px;
+  color: rgb(131, 131, 131);
+  margin-bottom: 36px;
+}
+
+.time-remaining-container-a {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 47px;
+}
+
+.time-remaining-container-b {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 66px;
+}
+
+.time-remaining-container-c {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 66px;
 }
 
 .clock-icon {
@@ -317,6 +365,18 @@ body {
 
 .upcoming-mobs-title {
   font-size: 24px;
+  margin-bottom: 42px;
+}
+
+.upcoming-mobs-container .small-line {
+  height: 1px;
+  background-color: rgb(147, 147, 146);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.upcoming-mobs-container {
+  height: 40px;
 }
 
 .upcoming-mobs-table-title {
@@ -331,6 +391,111 @@ body {
 
 .table-date {
   display: inline-block;
+}
+
+/* 
+  RIBBON STYLE
+*/
+
+ .ribbon-wrapper {
+  z-index: 100;
+  position: absolute;
+  bottom: 95px;
+  border-bottom: 6px solid #ccc;
+  border-top: 0px solid #ccc;
+  -moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+  -webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+  -moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+  -webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+  .ribbon-front {
+  font-size: 14px;
+  text-shadow: gray 0px 1px 1px;
+  text-align: center;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: #FAD000;
+  height: 24px;
+  width: 137px;
+  position: relative;
+  left: -7px;
+  z-index: 2;
+}
+
+  .ribbon-front,
+  .ribbon-back-left,
+  .ribbon-back-right
+{
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-topright,
+  .ribbon-edge-bottomleft,
+  .ribbon-edge-bottomright {
+  position: absolute;
+  z-index: 1;
+  border-style:solid;
+  height:0px;
+  width:0px;
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-topright {
+}
+
+  .ribbon-edge-bottomleft,
+  .ribbon-edge-bottomright {
+  top: 34px;
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-bottomleft {
+  left: -7px;
+  border-color: transparent #FAD000 transparent transparent;
+}
+
+  .ribbon-edge-topleft {
+  top: 0px;
+  border-width: 0px 7px 0 0;
+}
+  .ribbon-edge-bottomleft {
+  border-width: 0 7px 6px 0;
+}
+
+  .ribbon-edge-topright,
+  .ribbon-edge-bottomright {
+  left: 140px;
+  border-color: transparent transparent transparent #FAD000;
+}
+
+  .ribbon-edge-topright {
+  top: 0px;
+  border-width: 0px 0 0 0px;
+}
+  .ribbon-edge-bottomright {
+  border-width: 0 0 0px 0px;
+}
+
+  .ribbon-back-left {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 0px;
+  height: 34px;
+  background-color: #FAD000;  z-index: 0;
+}
+
+  .ribbon-back-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 34px;
+    z-index: 0;
 }
 
 
