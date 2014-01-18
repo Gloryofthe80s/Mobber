@@ -428,33 +428,44 @@ body {
 
 .upcoming-mobs-title {
   font-size: 24px;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 .upcoming-mobs-container .small-line {
   height: 1px;
   background-color: rgb(147, 147, 146);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.upcoming-mobs-container {
-  height: 40px;
+.upcoming-mobs-cell {
+  display: inline-block;
+  position: relative;
+  width: 210px;
 }
 
 .upcoming-mobs-table-title {
   display: inline-block;
-  margin-right: ;
+  font-size: 16px;
 }
 
 .table-mobbers-needed {
   display: inline-block;
-  margin-right: ;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
 }
 
 .table-date {
   display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
 }
+
+/*
+  START A MOB STYLES
+*/
 
 /* 
   RIBBON STYLE
@@ -559,7 +570,7 @@ body {
   right: 0px;
   width: 0px;
   height: 34px;
-    z-index: 0;
+  z-index: 0;
 }
 
 
