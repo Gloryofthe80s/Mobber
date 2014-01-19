@@ -217,7 +217,7 @@ body {
 
 .mobbers-needed-container {
   display: inline-block;
-  margin-left: 36px;
+  margin-left: 32px;
   margin-bottom: 26px;
 }
 
@@ -267,6 +267,7 @@ body {
 
 .join-mob-button {
   position: relative;
+  width: 314px;
   z-index: 10;
   height: 60px;
   line-height: 60px;
@@ -290,12 +291,16 @@ body {
 .reward-box {
   position: relative;
   width: 302px;
-  margin: -20px auto;
+  margin: -20px 7px;
   border: 1px solid rgb(162, 162, 162);
   border-radius: 6px;
   height: 86px;
   background-color: white;
   box-shadow: inset 1px -4px 10px -6px gray;
+}
+
+.small-line.special {
+  width: 316px;
 }
 
 .medal-icon {
@@ -322,7 +327,7 @@ body {
 .mob-disclaimer {
   font-size: 12.5px;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: -4px;
   text-align: center;
   color: rgb(147, 147, 146);
 }
@@ -334,16 +339,16 @@ body {
 }
 
 .twitter-icon{
-  margin-right: 2px;
-  margin-top: 10px;
+  margin-right: 4px;
+  margin-top: 12px;
   width: 62px;
   height: 29px;
   display: inline-block;
 }
 
 .facebook-icon{
-  margin-right: 2px;
-  margin-top: 10px;
+  margin-right: 4px;
+  margin-top: 12px;
   margin-left: -8px;
   width: 64px;
   height: 29px;
@@ -351,8 +356,8 @@ body {
 }
 
 .google-plus-icon{
-  margin-right: 2px;
-  margin-top: 10px;
+  margin-right: 4px;
+  margin-top: 12px;
   margin-left: -8px;
   width: 45px;
   height: 27px;
@@ -360,8 +365,8 @@ body {
 }
 
 .kickstarter-icon{
-  margin-right: 2px;
-  margin-top: 13px;
+  margin-right: 4px;
+  margin-top: 15px;
   margin-left: -8px;
   width: 132px;
   height: 24px;
@@ -379,6 +384,27 @@ body {
 
 .other-offers-bg .one-third {
   margin-right: -3px; /* to offset the inline-block 'pixel-growth' issue. */
+}
+
+.other-offer-container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.other-offer-container-first {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin-right: 28px;
+}
+
+.other-offer-container-last {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  right: 0;
 }
 
 .other-offer-pic {
@@ -402,21 +428,14 @@ body {
   display: inline-block;
   position: absolute;
   right: 20px;
-  bottom: 47px;
+  bottom: 13px;
 }
 
 .time-remaining-container-b {
   display: inline-block;
   position: absolute;
   right: 20px;
-  bottom: 66px;
-}
-
-.time-remaining-container-c {
-  display: inline-block;
-  position: absolute;
-  right: 20px;
-  bottom: 66px;
+  bottom: 32px;
 }
 
 .clock-icon {
@@ -448,6 +467,7 @@ body {
 
 .upcoming-mobs-container .small-line {
   height: 1px;
+  width: 640px;
   background-color: rgb(147, 147, 146);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -535,7 +555,6 @@ body {
   background-color: rgb(84, 83, 82);
   color: white;
   text-shadow: 0 1px black;
-  
 }
 
 .footer .container {
@@ -571,6 +590,15 @@ body {
   margin-bottom: 10px;
 }
 
+.categories-col-a {
+  display: inline-block;
+}
+
+.categories-col-b {
+  display: inline-block;
+  margin-left: 15px;
+}
+
 .connect-column {
   width: 220px;
   display: inline-block;
@@ -580,7 +608,7 @@ body {
 .connect-column-title {
   display: block;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   letter-spacing: 1px;
 }
 
@@ -609,16 +637,17 @@ body {
 }
 
 .soc-media-link {
-  height: 38px;
+  height: 28px;
   font-size: 14px;
-  line-height: 38px;
+  letter-spacing: 1px;
+  line-height: 26px;
   color: rgb(221, 221, 221);
-  border-bottom: 1px solid rgb(55, 55, 55);
-  margin: -1px 0;
 }
 
-.categories-column .small-line {
-
+.connect-column .small-line {
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 .support-column {
@@ -626,14 +655,7 @@ body {
   display: inline-block;
 }
 
-.categories-col-a {
-  display: inline-block;
-}
 
-.categories-col-b {
-  display: inline-block;
-  margin-left: 15px;
-}
 
 
 .button.orange-button {
