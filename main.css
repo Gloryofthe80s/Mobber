@@ -42,7 +42,7 @@ body {
 .button {
   border-radius: 6px;
   text-align: center;
-  background-color: maroon;
+  background-color: green;
   box-shadow: 0px 1px 3px 0px;
   color: white;
   vertical-align: middle;
@@ -181,6 +181,7 @@ body {
   border: 1px solid rgb(218, 218, 218);
   background-color: rgb(208, 205, 199);
   margin-bottom: 6px;
+  letter-spacing: 1px;
 }
 
 .caption span {
@@ -379,7 +380,6 @@ body {
 
 .other-offers-bg {
   background-color: white;
-  margin-bottom: 20px;
 }
 
 .other-offers-bg .one-third {
@@ -390,7 +390,6 @@ body {
   position: relative;
   display: inline-block;
   width: 300px;
-  margin-right: 10px;
 }
 
 .other-offer-container-first {
@@ -421,21 +420,21 @@ body {
   width:196px;
   font-size: 12px;
   color: rgb(131, 131, 131);
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .time-remaining-container-a {
   display: inline-block;
   position: absolute;
-  right: 20px;
-  bottom: 13px;
+  right: 0;
+  top: 0;
 }
 
 .time-remaining-container-b {
   display: inline-block;
   position: absolute;
-  right: 20px;
-  bottom: 32px;
+  right: 0;
+  top: 0;
 }
 
 .clock-icon {
@@ -451,9 +450,9 @@ body {
 
 .large-line {
   height: 1px;
+  width: 960px;
   background-color: rgb(147, 147, 146);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto ;
 }
 
 /*
@@ -462,33 +461,35 @@ body {
 
 .upcoming-mobs-title {
   font-size: 24px;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .upcoming-mobs-container .small-line {
   height: 1px;
-  width: 640px;
+  width: 626px;
   background-color: rgb(147, 147, 146);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .upcoming-mobs-cell-title {
   display: inline-block;
   position: relative;
-  width: 210px;
+  width: 206px;
 }
 
 .upcoming-mobs-cell-mobbers-needed {
   display: inline-block;
   position: relative;
-  width: 210px;
+  width: 206px;
+  text-align: center;
 }
 
 .upcoming-mobs-cell-date {
   display: inline-block;
   position: relative;
-  width: 210px;
+  width: 206px;
+  text-align: right;
 }
 
 .upcoming-mobs-table-title {
@@ -512,7 +513,6 @@ body {
 */
 
 .start-a-mob-bg {
-  margin-top: 20px;
   width: 320px;
   height: 212px;
   background-color: rgb(208, 205, 199);
@@ -651,15 +651,21 @@ body {
 }
 
 .support-column {
-  width: 300px;
+  width: 256px;
   display: inline-block;
+  margin-left: 88px;
 }
 
-
-
-
-.button.orange-button {
+.button.how-it-works-button {
+  display: inline-block;
   color: white;
+  width: 218px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  margin-top: 0px;
+  box-shadow: inset 0 2px 0px -1px rgb(238, 238, 238);
+  
   background: rgb(253,217,51); /* Old browsers */
   background: -moz-linear-gradient(top, rgb(253,217,51) 0%, rgb(227,166,45) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(253,217,51)), color-stop(100%,rgb(227,166,45))); /* Chrome,Safari4+ */
@@ -668,30 +674,44 @@ body {
   background: -ms-linear-gradient(top, rgb(253,217,51) 0%,rgb(227,166,45) 100%); /* IE10+ */
   background: linear-gradient(to bottom, rgb(253,217,51) 0%,rgb(227,166,45) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdd933', endColorstr='#e3a62d',GradientType=0 ); /* IE6-9 */
-  border: 1px solid rgb(207, 156, 29);
+  border: 1px solid rgb(105, 89, 49);
 }
 
+.support-title {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 20px; 
+}
 
+.support-text {
+  color: rgb(221, 221, 221);
+  padding: 0px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
 
+.support-button {
+  margin-top: 20px;
+}
 
+.small-line-support-column {
+  height: 1px;
+  width: 256px;
+  display: inline-block;
+  margin-top: 47px;
+  background-color: black;
+  margin-left: 0;
+  margin-bottom: 6px;
+  text-shadow: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copyright {
+  letter-spacing: 0px;
+  color: rgb(217, 217, 217);
+  font-size: 14px;
+}
 
 /* 
   RIBBON STYLE
